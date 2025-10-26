@@ -1,0 +1,293 @@
+/*
+  MODERN, SLEEK, AND LUXURIOUS REDESIGN
+  Color Palette:
+  - Primary (Elegant Pink/Mauve): #9c4a6b (Used for titles, brand)
+  - Secondary (Soft Neutral/Gold): #efe7e5 (Background/Accent)
+  - Text: #4c4146 (Deep Charcoal/Brown)
+  - Accent: #b49e89 (Muted Gold)
+
+  Fonts:
+  - Curvy/Elegant: 'Playfair Display', serif (For Titles)
+  - Modern/Sleek: 'Montserrat', sans-serif (For Body/Navigation)
+*/
+
+/* Base Styles */
+body {
+  /* Soft, neutral off-white background with a subtle warmth */
+  background-color: #f7f3f2;
+  font-family: 'Montserrat', sans-serif;
+  color: #4c4146;
+  line-height: 1.7;
+  overflow-x: hidden; /* Prevent horizontal scroll from animations */
+}
+
+/* Typography for elegance */
+.elegant-font {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.95); /* Very light, nearly white */
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(156, 74, 107, 0.1); /* Subtle border matching primary color */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #9c4a6b !important; /* Elegant Primary Color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+  color: #4c4146 !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #9c4a6b !important;
+}
+
+/* Hero Section */
+.hero {
+  /* Subtler gradient on top of a refined background image */
+  background: linear-gradient(135deg, rgba(247, 243, 242, 0.7), rgba(239, 231, 229, 0.8)),
+              url('https://imgs.search.brave.com/hMT1z2PnkTj7XlarfDFwu6ntsn6KQXosglpP1vvhBMw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wZWFj/aGhhbXBlcnMuY28u/dWsvY2RuL3Nob3Av/ZmlsZXMvTHV4dXJ5/SGFtcGVyQWxjb2hv/bEZyZWVfOTkzY2Qx/YzItZjczYi00OTli/LWIyMWItN2QwNDky/NzA1MTlkLmpwZz92/PTE3MzE5MjQ4ODMm/d2lkdGg9MTEwMA') center/cover fixed; /* Added fixed for a premium feel */
+  color: #4c4146;
+  text-align: center;
+  padding: 180px 20px 150px;
+  position: relative;
+}
+
+.hero-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.8em;
+  color: #9c4a6b;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+  animation: gentleFadeIn 2s ease-out;
+  margin-bottom: 20px;
+}
+
+.lead {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  color: #6b5c61;
+}
+
+/* Call to Action Button */
+.btn-primary-custom {
+  background-color: #9c4a6b;
+  border-color: #9c4a6b;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(156, 74, 107, 0.3);
+}
+
+.btn-primary-custom:hover {
+  background-color: #7a3a54;
+  border-color: #7a3a54;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(156, 74, 107, 0.4);
+}
+
+/* Section Titles */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8em;
+  color: #9c4a6b;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.section-title.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card Styling (Sleek and Modern) */
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Very subtle border */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(156, 74, 107, 0.1); /* Lighter, less aggressive shadow */
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background: #ffffff;
+  overflow: hidden; /* Ensures image respects border-radius */
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Sleeker, smaller lift */
+  box-shadow: 0 15px 30px rgba(156, 74, 107, 0.2);
+}
+
+.card-img-top {
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: #9c4a6b;
+  margin-top: 10px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background: #efe7e5; /* Soft, contrasting neutral background */
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(76, 65, 70, 0.05);
+  padding: 20px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: none;
+}
+
+.testimonial-card .card-text {
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #6b5c61;
+}
+
+.testimonial-card .card-title {
+  font-weight: 500;
+  margin-top: 10px;
+  color: #9c4a6b;
+}
+
+/* Footer */
+.footer {
+  background-color: #efe7e5; /* Matching soft neutral */
+  color: #4c4146;
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid rgba(156, 74, 107, 0.1);
+  font-size: 0.9rem;
+}
+
+/* Contact Section Styling */
+#contact {
+  background-color: #fcfcfc;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 50px;
+}
+
+.contact-info i {
+  color: #9c4a6b;
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+/* Keyframe Animations */
+@keyframes gentleFadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 20px 80px;
+  }
+  .hero-title {
+    font-size: 2.5em;
+  }
+  .section-title {
+    font-size: 2.2em;
+  }
+}
+
+/* --- FIXED CONTINUOUS SCROLL STYLING --- */
+#bespoke-work {
+  padding: 80px 0;
+  background-color: #efe7e5; /* Soft background for this section */
+}
+
+.scroll-container {
+  overflow: hidden; /* Hides content outside the view, making the animation loop seamless */
+  padding: 20px 0;
+}
+
+.scroll-track {
+  display: flex; /* Arranges cards horizontally */
+  animation: scrollHampers 60s linear infinite; /* Smooth, continuous, 60-second loop */
+  width: max-content; /* Critical: Allows the track to be wider than the container */
+  padding-right: 25px; /* Ensures gap at the start/end of the loop */
+}
+
+/* Pause the scroll animation when hovering over the track */
+.scroll-track:hover {
+  animation-play-state: paused;
+}
+
+.scroll-card {
+  flex-shrink: 0; /* Prevents cards from shrinking */
+  width: 300px;
+  height: 400px;
+  margin-right: 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(156, 74, 107, 0.2);
+  transition: transform 0.4s ease;
+  position: relative;
+}
+
+.scroll-card:hover {
+  transform: scale(1.03);
+}
+
+.scroll-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scroll-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  color: white;
+  text-align: left;
+}
+
+.scroll-card-overlay h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/* KEYFRAME ANIMATION FOR CONTINUOUS SCROLL */
+/* Scrolls exactly one set of duplicated content (50% of the total track width) */
+@keyframes scrollHampers {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
