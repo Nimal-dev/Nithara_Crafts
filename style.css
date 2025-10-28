@@ -1,7 +1,7 @@
 /*
   MODERN, SLEEK, AND LUXURIOUS REDESIGN
   Color Palette:
-  - Primary (Elegant Pink/Mauve): #9c4a6b (Used for titles, brand)
+  - Primary (Elegant Pink/Mauve): #b1706c (Used for titles, brand)
   - Secondary (Soft Neutral/Gold): #efe7e5 (Background/Accent)
   - Text: #4c4146 (Deep Charcoal/Brown)
   - Accent: #b49e89 (Muted Gold)
@@ -39,7 +39,7 @@ body {
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
   font-size: 2.2rem;
-  color: #9c4a6b !important; /* Elegant Primary Color */
+  color: #b1706c !important; /* Elegant Primary Color */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
 }
 
@@ -51,7 +51,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #9c4a6b !important;
+  color: #b1706c !important;
 }
 
 /* Hero Section */
@@ -68,7 +68,7 @@ body {
 .hero-title {
   font-family: 'Dancing Script', cursive;
   font-size: 3.8em;
-  color: #9c4a6b;
+  color: #b1706c;
   font-weight: 600;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
   animation: gentleFadeIn 2s ease-out;
@@ -77,14 +77,15 @@ body {
 
 .lead {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.25rem;
+  font-weight: 500;
+  font-size: 1.5rem;
   color: #6b5c61;
 }
 
 /* Call to Action Button */
 .btn-primary-custom {
-  background-color: #9c4a6b;
-  border-color: #9c4a6b;
+  background-color: #b1706c;
+  border-color: #b37976;
   color: #fff;
   padding: 10px 30px;
   border-radius: 50px;
@@ -95,8 +96,8 @@ body {
 }
 
 .btn-primary-custom:hover {
-  background-color: #7a3a54;
-  border-color: #7a3a54;
+  background-color: #b1706c;
+  border-color: rgb(125, 69, 92);
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(156, 74, 107, 0.4);
 }
@@ -105,7 +106,7 @@ body {
 .section-title {
   font-family: 'Playfair Display', serif;
   font-size: 2.8em;
-  color: #9c4a6b;
+  color: #b1706c;
   font-weight: 600;
   margin-bottom: 40px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
@@ -144,7 +145,7 @@ body {
 .card-title {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
-  color: #9c4a6b;
+  color: #b1706c;
   margin-top: 10px;
 }
 
@@ -171,7 +172,7 @@ body {
 .testimonial-card .card-title {
   font-weight: 500;
   margin-top: 10px;
-  color: #9c4a6b;
+  color: #b1706c;
 }
 
 /* Footer */
@@ -184,6 +185,59 @@ body {
   font-size: 0.9rem;
 }
 
+/* Social Media Links */
+.social-media a {
+  color: #b1706c;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #7a3a54;
+  transform: scale(1.1);
+}
+
+/* Sticky Social Media Sidebar */
+.social-sidebar {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.social-sidebar a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #b1706c;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(156, 74, 107, 0.3);
+}
+
+.social-sidebar a:hover {
+  background-color: #7a3a54;
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(156, 74, 107, 0.4);
+}
+
+/* Responsive: Hide sidebar on small screens */
+@media (max-width: 768px) {
+  .social-sidebar {
+    display: none;
+  }
+}
+
 /* Contact Section Styling */
 #contact {
   background-color: #fcfcfc;
@@ -193,7 +247,7 @@ body {
 }
 
 .contact-info i {
-  color: #9c4a6b;
+  color: #b1706c;
   font-size: 1.5rem;
   margin-right: 15px;
 }
