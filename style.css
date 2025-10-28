@@ -231,10 +231,16 @@ body {
   box-shadow: 0 6px 15px rgba(156, 74, 107, 0.4);
 }
 
-/* Responsive: Hide sidebar on small screens */
+/* Responsive: Reposition sidebar on small screens */
 @media (max-width: 768px) {
   .social-sidebar {
-    display: none;
+    top: auto;
+    bottom: 20px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 15px;
   }
 }
 
